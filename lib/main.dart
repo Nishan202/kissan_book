@@ -1,7 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:kissan_book/Screens/comments_screen.dart';
-import 'package:kissan_book/Screens/login_screen.dart';
-import 'package:kissan_book/Screens/splash_screen.dart';
 import 'package:kissan_book/Utils/app_routes.dart';
 
 void main() {

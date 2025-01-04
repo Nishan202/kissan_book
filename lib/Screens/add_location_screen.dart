@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:kissan_book/Screens/category_screen.dart';
 import 'package:kissan_book/Utils/app_routes.dart';
 import 'package:kissan_book/Utils/asset_managements.dart';
 import 'package:kissan_book/Widgets/custom_button.dart';
@@ -23,7 +22,10 @@ class _AddLocationScreenState extends State<AddLocationScreen> {
       appBar: AppBar(
         backgroundColor: Color(Colour.pageColor),
         centerTitle: true,
-        title: Text('Add Location', style: TextStyle(fontSize: 16, fontWeight: FontWeight.w600),),
+        title: Text(
+          'Add Location',
+          style: TextStyle(fontSize: 16, fontWeight: FontWeight.w600),
+        ),
       ),
       body: Container(
         padding: const EdgeInsets.symmetric(vertical: 50, horizontal: 24),
@@ -87,10 +89,11 @@ class _AddLocationScreenState extends State<AddLocationScreen> {
               height: 48,
             ),
             CustomButton(
-                title: "Save",
-                onClick: () {
-                  Navigator.pushNamed(context, AppRoutes.CATEGORY_SCREEN_ROUTE);
-                })
+              title: "Save",
+              onClick: () {
+                Navigator.pushNamed(context, AppRoutes.CATEGORY_SCREEN_ROUTE);
+              },
+            )
           ],
         ),
       ),

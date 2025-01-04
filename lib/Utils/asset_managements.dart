@@ -1,4 +1,3 @@
-import 'package:flutter/material.dart';
 
 class Assets {
   static const String splash_screen = 'assets/images/splash_screen.png';
