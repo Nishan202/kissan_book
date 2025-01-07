@@ -99,7 +99,8 @@ class _CategoryScreenState extends State<CategoryScreen> {
             CustomRadiobuttonGroup(
               groupValue: _value,
               value: 3,
-              title: 'Want to Promote your Business',
+              title: 'Want to Promote your',
+              subTitle: 'Business',
               onChanged: (value) {
                 setState(
                   () {
@@ -114,7 +115,8 @@ class _CategoryScreenState extends State<CategoryScreen> {
             CustomRadiobuttonGroup(
               groupValue: _value,
               value: 4,
-              title: 'Government/Educational Institute ',
+              title: 'Government/',
+              subTitle: 'Educational Institute',
               onChanged: (value) {
                 setState(
                   () {

@@ -5,6 +5,7 @@ class Assets {
   static const String logo_name = 'assets/images/logo_name.png';
   static const String background_image = 'assets/images/background_image.png';
   static const String calendar_icon = 'assets/images/calendar_icon.png';
+  static const String location_dialog_box = 'assets/images/location_dialog.png';
 }
 
 class Colour {

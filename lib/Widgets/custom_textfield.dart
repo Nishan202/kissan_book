@@ -37,6 +37,7 @@ class CustomTextfield extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return TextField(
+      // canRequestFocus: false,
       minLines: minimuLine,
       maxLines: maximumLine,
       maxLength: maximumLength,

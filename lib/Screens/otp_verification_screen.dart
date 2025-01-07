@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:kissan_book/Screens/add_location_screen.dart';
 import 'package:kissan_book/Utils/app_routes.dart';
 import 'package:kissan_book/Utils/asset_managements.dart';
+import 'package:kissan_book/Widgets/custom_alert_dialogBox.dart';
 import 'package:kissan_book/Widgets/custom_button.dart';
 import 'package:kissan_book/Widgets/verification_textfield.dart';
 
@@ -94,7 +95,14 @@ class _OtpVerificationScreenState extends State<OtpVerificationScreen> {
               CustomButton(
                 title: "Verify Now",
                 onClick: () {
-                  Navigator.pushNamed(context, AppRoutes.ADD_LOCATION_SCREEN_ROUTE);
+                  // Navigator.pushNamed(context, AppRoutes.ADD_LOCATION_SCREEN_ROUTE);
+                  showDialog(
+                    context: context, builder: (context) => CustomAlertDialogbox(
+                      title: 'Location Selection', 
+                  buttonText: 'Set Location Manually', 
+                  buttonTextDown: 'abc', 
+                  onClickBtnDown: (){}, 
+                  onClickBtn: () => Navigator.pushReplacementNamed(context, AppRoutes.ADD_LOCATION_SCREEN_ROUTE),),);
                 },
               ),
               const SizedBox(
